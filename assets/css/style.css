@@ -12,6 +12,9 @@
 
 body {
     background-color: var(--light);
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -34,7 +37,7 @@ body {
     font-size: 20px;
 }
 
-.header asection ul {
+.header section ul {
     list-style-type: none;
 }
 
@@ -63,30 +66,51 @@ p {
 }
 
 .info {
-    width: 75%;
+    width: 95%;
     display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
+
 }
 
-.info h2 {
-    margin-right: 1px solid var(--dark);
-    margin-left: 3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+    background-color: salmon;
     align-self: center;
+    width: 25%;
+    min-width: 100px;
+    padding: 20px;
+    border-right: 5px solid var(--dark);
 }
 
 .info p {
-    justify-content: center;
-    align-items: center;
+    background-color: #00ff00;
+    margin: 20px;
     align-self: flex-end;
 }
 
 .items {
-    background-color: var(--light);
+    width: 90%;
+    background-color: pink;
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .major {
+    background-color: bisque;
+    width: 75%;
+    flex: 0 0 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .minor {
+    background-color: aqua;
+    width: 75%;
+    flex: 0 0 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -94,21 +118,21 @@ p {
   }
 
 .card {
-    padding: 10px;
+
     flex: 0 0 300px;
-    margin: 20px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-.card > img {
+.card img {
     position: relative;
     border-style: solid;
     border-width: 5px;
     border-color: var(--surround);
-    width: 100%;
+    width: 50%;
 }
 
 .card h3 {
@@ -116,7 +140,7 @@ p {
     background: var(--dark);
     color: var(--light);
     z-index: 2;
-    width: 35%;
+
     align-items: flex-start;
     align-self: flex-end;
     bottom: -15px;
@@ -128,7 +152,7 @@ p {
     background: var(--dark);
     color: var(--light);
     z-index: 2;
-    width: 35%;
+
 }
 
 .footer {
