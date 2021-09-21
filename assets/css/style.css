@@ -128,7 +128,7 @@ h2 {
   }
 
 .card img {
-    position: relative;
+
     border-style: solid;
     border-width: 5px;
     border-color: var(--surround);
@@ -136,7 +136,7 @@ h2 {
 }
 
 .card h3 {
-    position: absolute;
+
     background: var(--dark);
     color: var(--light);
     z-index: 2;
@@ -147,7 +147,7 @@ h2 {
 }
 
 .card p {
-    position: absolute;
+
     
     background: var(--dark);
     color: var(--light);
